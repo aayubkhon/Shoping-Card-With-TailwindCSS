@@ -10,15 +10,15 @@ export default function ProductPages() {
   return (
     <div>
            <Announce/>
-        <Navbar/>
-        <div className='flex justify-center'>
+        {/* <Navbar/> */}
+        <div className='flex justify-center mobile:flex-col mobile:mt-3 mobile:p-4'>
             <div className='flex flex-1 items-center justify-start'>
                 <img className='w-[80%] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] ease-in duration-300' 
                 src='https://i.pinimg.com/originals/4e/53/8a/4e538ac5f9708fa997882057c61f6633.png' alt='pro_img'/>
             </div>
-            <div className='flex-[1.3] flex items-start justify-start flex-col mt-10'>
-            <h1 className='title text-[40px] font-mono'>Jeans Hoody Original </h1>
-            <p className='pr-[4rem] text-justify mt-4 font-mono'>
+            <div className='flex-[1.3] flex items-start justify-start flex-col mt-10 mobile:items-center'>
+            <h1 className='title text-[40px] font-mono mobile:text-[30px]'>Jeans Hoody Original </h1>
+            <p className='pr-[4rem] text-justify mt-4 font-mono mobile:pr-0'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quas reiciendis harum deleniti. Vero ratione quas officia 
                 aliquam explicabo velit, voluptatem dolorum cumque exercitationem consequuntur repudiandae nemo dolor tempore deserunt?
             </p>
@@ -49,8 +49,8 @@ export default function ProductPages() {
             <button className='btn mt-5'>Add to Cart</button>
             </div>
         </div>
-        <NewsLeter/>
-        <Footer/>
+        {/* <NewsLeter/>
+        <Footer/> */}
     </div>
   )
 }

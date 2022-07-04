@@ -34,7 +34,7 @@ const prefSlide = () =>{
   }
 }
   return (
-    <div className="parentDiv h-[540px] bg-white flex items-center justify-between">
+    <div className="parentDiv h-[540px] bg-white flex items-center justify-between mobile:hidden">
       <div className="leftarrow ">
         <ArrowLeft className={ArrowStyle} onClick={prefSlide} />
       </div> 

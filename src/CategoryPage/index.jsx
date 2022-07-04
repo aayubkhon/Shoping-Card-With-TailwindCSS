@@ -14,7 +14,7 @@ export default function CategoryPage() {
         <div className='flex flex-col p-5'>
             <h1 className='text-[30px]'>Mens's Cloth</h1>
             <div className='flex items-center justify-between mt-3'>
-                <div className='flex'>
+                <div className='flex mobile:flex-col '>
                     <p>Filter by</p>
                     <select className='ml-3 border-2 border-silver'>
                         <option selected disabled>Size</option>
@@ -22,7 +22,7 @@ export default function CategoryPage() {
                         <option>Medium</option>
                         <option>Large</option>
                     </select>
-                    <select className='ml-3 border-2 border-silver'>
+                    <select className='ml-3 border-2 border-silver mobile:mt-3'>
                         <option selected disabled>Color</option>
                         <option>Red</option>
                         <option>Blue</option>
@@ -41,10 +41,9 @@ export default function CategoryPage() {
                 </div>
             </div>
         </div>
-
         <Product/>
-        <NewsLeter/>
-        <Footer/>
+        {/* <NewsLeter/>
+        <Footer/> */}
     </div>
   )
 }

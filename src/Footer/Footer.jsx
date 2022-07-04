@@ -10,15 +10,15 @@ import {EmailOutline} from '@styled-icons/evaicons-outline/EmailOutline'
 
 
 export default function Footer() {
-    const FooterStyle = 'm-e rounded-full cursor-pointer p-2 text-white bg-blue-700 w-[50px]'
+    const FooterStyle = 'm-3 rounded-full cursor-pointer p-2 text-white bg-blue-700 w-[50px] mobile:ml-5'
   return (
-    <div className='flex items-center justify-around p-2'>
+    <div className='flex items-center justify-around p-2 mobile:flex-col mobile:items-start'>
         <div className='flex-1 flex flex-col flex-wrap p-2'>
             {/* Store information */}
-            <h1 className='text-[25]'>
+            <h1 className='text-[25px] font-mono font-bold'>
                 AkramovA
             </h1>
-            <p>
+            <p className='text-[25] font-mono'>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus debitis libero ad, 
                 veniam ipsam eum, repellendus omnis alias ea inventore 
                 dolores voluptate eos vel officiis maxime sit. Ullam, fuga rerum!
