@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 
 
@@ -9,10 +9,7 @@ export default function Login() {
     const onSub = ()=>{
         JSON.parse(localStorage.getItem('user',userprofile))
         if(userprofile.login === userprofile.login && userprofile.password === userprofile.password ) {
-            Navigate('/home')
-        }
-        else {
-            alert('Xato')
+            Navigate("/home")
         }
     }
     console.log(userprofile);
@@ -46,7 +43,7 @@ export default function Login() {
             </div>
             <input onClick={onSub}  type="button" value='Login' className='btn mt-7
             hover:scale-[1.02]'/>
-             <input onClick={()=>Navigate('/register')}  type="button" value='Register' className='btn mt-7
+             <input onClick={()=>Navigate("/register")}  type="button" value='Register' className='btn mt-7
             hover:scale-[1.02]'/>
         </div>
     </div>

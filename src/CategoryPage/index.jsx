@@ -1,16 +1,17 @@
 import React from 'react'
-import Announce from '../Announce/index'
-import Navbar from '../Navbar/Navbar'
 import Product from '../Product/index'
+import Cart from '../Page/Cart'
+import ProductPages from '../Page/ProductPages'
 import NewsLeter from '../NewLetter'
 import Footer from '../Footer/Footer'
+
+
 
 
 export default function CategoryPage() {
   return (
     <div>
-        <Announce/>
-        <Navbar/>
+        
         <div className='flex flex-col p-5'>
             <h1 className='text-[30px]'>Mens's Cloth</h1>
             <div className='flex items-center justify-between mt-3'>
@@ -42,8 +43,10 @@ export default function CategoryPage() {
             </div>
         </div>
         <Product/>
-        {/* <NewsLeter/>
-        <Footer/> */}
+        <Cart/>
+        <ProductPages/>
+        <NewsLeter/>
+          <Footer/>
     </div>
   )
 }

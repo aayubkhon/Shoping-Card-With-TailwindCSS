@@ -1,9 +1,12 @@
 import React from 'react'
 import { Search } from '@styled-icons/feather/Search'
 import { ShoppingCart } from '@styled-icons/typicons/ShoppingCart'
+import { useNavigate } from 'react-router-dom'
+import Sliders from '../Sliders'
 
 export const Nvabar = () => {
   const style = "text-[14px] cursor-pointer ml-[25px] font-[500] mobile:ml-[10px]"
+  const navigate = useNavigate()
   return (
     <div className='navbar h-[60px] shadow-md relative z-10'>
       <div className='wrapper pl-[20px] pr-[20px] pt-[10px] pb-[10px] flex 
@@ -19,14 +22,16 @@ export const Nvabar = () => {
           </div>
        
 {/* Logo */}
-          <div className='center flex-1 text-center'>
+          <div className='center flex-1 flex justify-between'>
             <p className='logo font-bold text-lg mobile:text-sm '>Summer Kings</p>
+            <button onClick={()=> navigate("/home")} className='logo font-bold text-lg mobile:text-sm '>Home</button>
+
           </div>
 {/* Right div */}
           <div className='right flex flex-1 items-center justify-end 
           mobile:flex-[1.5] mobile:justify-center'>
-            <p className={style}>Register</p>
-            <p className={style}>Sign in</p>
+            <button onClick={()=>navigate("/register")} className={style}>Register</button>
+            <button onClick={()=>navigate("/login")} className={style}>Sign in</button>
            <div className={style}>
            <div badgeContent={2} color='primary'>
             <ShoppingCart className='shoping w-[20px]'/>
@@ -34,6 +39,7 @@ export const Nvabar = () => {
            </div>
           </div>
         </div>
+        {/* <Sliders/> */}
     </div>
   )
 }

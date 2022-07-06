@@ -8,7 +8,7 @@ export default function Register() {
     const Navigate = useNavigate()
     const onSubmit = () =>{
         localStorage.setItem('user',JSON.stringify(username))
-        Navigate('/')
+        Navigate("/login")
     }
     const handleChange = (e) =>{
         setUsername(
@@ -51,10 +51,9 @@ export default function Register() {
             </div>
             <input onClick={onSubmit}  type="button" value='Register' className='btn mt-7
             hover:scale-[1.02]'/>
-            <input onClick={()=>Navigate('/')}  type="button" value='Login' className='btn mt-7
-            hover:scale-[1.02]'/>
+            {/* <input onClick={()=>Navigate("/categor")}  type="button" value='Login' className='btn mt-7
+            hover:scale-[1.02]'/> */}
         </div>
-        <div className=''></div>
     </div>
   )
 }

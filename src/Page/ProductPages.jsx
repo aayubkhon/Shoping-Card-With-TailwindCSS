@@ -1,16 +1,10 @@
 import React from 'react'
-import Announce from '../Announce/index'
-import Footer from '../Footer/Footer'
-import Navbar from '../Navbar/Navbar'
-import NewsLeter from '../NewLetter'
-import Product from '../Product/index'
+
 import Counter from './Counter'
 
 export default function ProductPages() {
   return (
     <div>
-           <Announce/>
-        {/* <Navbar/> */}
         <div className='flex justify-center mobile:flex-col mobile:mt-3 mobile:p-4'>
             <div className='flex flex-1 items-center justify-start'>
                 <img className='w-[80%] h-[80%] rounded-lg shadow-lg hover:scale-[1.1] ease-in duration-300' 
@@ -49,8 +43,7 @@ export default function ProductPages() {
             <button className='btn mt-5'>Add to Cart</button>
             </div>
         </div>
-        {/* <NewsLeter/>
-        <Footer/> */}
+        
     </div>
   )
 }

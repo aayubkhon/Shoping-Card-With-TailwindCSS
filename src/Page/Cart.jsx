@@ -1,14 +1,9 @@
 import React from 'react'
-import Announce from '../Announce/index'
-import Footer from '../Footer/Footer'
-import Navbar from '../Navbar/Navbar'
-import NewsLeter from '../NewLetter'
 import Counter from './Counter'
 function Cart() {
   return (
     <div>
-          <Announce/>
-        <Navbar/>
+       
         <div className='p-6'>
             <div className='flex justify-center text-5xl'>
                 Cart</div>
@@ -119,9 +114,6 @@ function Cart() {
                 </div>
         </div>
 
-
-        {/* <NewsLeter/>
-        <Footer/> */}
     </div>
   )
 }

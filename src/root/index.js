@@ -2,36 +2,30 @@ import React from 'react'
 import Announce from '../Announce/index'
 import Categor from '../categorry'
 import CategoryPage from '../CategoryPage'
-import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
-import NewsLeter from '../NewLetter'
-import Cart from '../Page/Cart'
 import Login from '../Page/Login'
-import ProductPages from '../Page/ProductPages'
-import Product from '../Product/index'
-import Sliders from '../Sliders'
 import Register from '../Page/Registar'
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Home from '../Home/index'
+import {BrowserRouter as Router,Routes,Route,} from 'react-router-dom'
  
 export const Root = () => {
   return (
     <div>
-      {/* <Router>
+      <Router>
+      <Announce/>
+          <Navbar/>
         <Routes>
-          <Route path='/' element={<Login/>}/>
-          <Route path='/register' element={<Register/>}/>
+          <Route  path='/' element={<Home/>}/>
+          <Route  path='/home' element={<Home/>}/>
+          <Route  path='/register' element={<Register/>}/>
+          <Route  path='/buypro' element={<CategoryPage/>}/>
+          <Route  path='/categor' element={<Categor/>}/>
+          <Route  path='/register' element={<Register/>}/>
+          <Route  path='/Navbar' element={<Navbar/>}/>
+          <Route  path='/login' element={<Login/>}/>
         </Routes>
-      </Router> */}
-        <Announce/>
-        <Navbar/>
-        <Sliders/>
-        <Categor/>
-        <Product/>
-        <CategoryPage/>
-        <ProductPages/>
-        <Cart/>
-        <NewsLeter/>
-        <Footer/>
+        </Router>
+      
     </div>
   )
 }
